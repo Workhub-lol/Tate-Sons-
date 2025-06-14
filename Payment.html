@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>Tate Sons Transport</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    .font-montserrat {
+      font-family: 'Montserrat', sans-serif;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+    .transition-all {
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-[#f7faff]">
+  <!--topnumberbar-->
+  <div class="bg-white border-b border-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-1">
+      <p class="text-xs text-[#1a2a5a] font-semibold text-center">
+        Book Your Tickets Now! Call UAN:
+        <span class="underline">
+          +92 3087035263
+        </span>
+        or Visit Our Website!
+      </p>
+    </div>
+  </div>
+  
+  <!--navbar section-->
+  <nav class="bg-[#14264e] ">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a class="flex items-center space-x-2 bg-white rounded px-2 py-1 transition-all hover:shadow-md" href="Home.html">
+          <span class="text-[#14264e] font-bold text-lg select-none">
+            T&S
+          </span>
+          <span class="text-[#14264e] font-serif italic text-sm hidden sm:inline">
+            Tate Sons
+          </span>
+        </a>
+        <!--mobile menu-->
+        <button class="md:hidden text-white focus:outline-none" id="mobile-menu-button">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+        <!--pcnav-->
+        <ul class="hidden md:flex space-x-6 text-white text-sm font-semibold mx-auto">
+          <li>
+            <a class="hover:underline transition-all" href="index.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="#">
+              Our Services
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="booking.html">
+              Book your Ticket
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="About Us.html">
+              About us
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="Contact Us.html">
+              Contact us
+            </a>
+          </li>
+        </ul>
+        <div class="hidden md:block">
+          <span class="bg-white text-[#14264e] font-semibold px-4 py-2 text-sm rounded-sm select-none shadow-sm">
+            UAN: +92 3087035263
+          </span>
+        </div>
+      </div>
+    </div>
+    <!--mob nav bar-->
+    <div class="md:hidden hidden bg-[#0c1e4f] px-4 py-2" id="mobile-menu">
+      <ul class="flex flex-col space-y-3 text-white text-sm font-semibold pb-3">
+        <li>
+          <a class="block py-1" href="index.html">
+            Home
+          </a>
+        </li>
+        <li>
+          <a class="block py-1" href="#">
+            Our Services
+          </a>
+        </li>
+        <li>
+          <a class="block py-1" href="booking.html">
+            Book your Ticket
+          </a>
+        </li>
+        <li>
+          <a class="block py-1" href="About Us.html">
+            About us
+          </a>
+        </li>
+        <li>
+          <a class="block py-1" href="Contact Us.html">
+            Contact us
+          </a>
+        </li>
+        <li class="pt-2">
+          <span class="bg-white text-[#14264e] font-semibold px-3 py-1.5 text-sm rounded-sm inline-block">
+            UAN: +92 3087035263
+          </span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Main content -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 mb-16">
+   <div class="flex flex-col lg:flex-row lg:space-x-6 space-y-6 lg:space-y-0">
+    <!-- Left box -->
+    <section class="flex-1 border border-gray-300 rounded-md p-4 bg-white max-w-full">
+     <div class="flex justify-between items-center mb-3">
+      <p class="text-1xl font-semibold text-gray-700">
+       Secure Checkout: Complete your Purchase.
+      </p>
+      <p class="text-1xs font-semibold text-[#0B2A66]">
+       Pay in:
+       <span class="font-normal text-[#0B2A66]">
+        4m 42s
+       </span>
+      </p>
+     </div>
+     <form>
+      <fieldset class="space-y-3">
+       <label class="flex items-center border border-gray-300 rounded-md p-2 cursor-pointer hover:border-[#0B2A66]">
+        <img alt="Debit/Credit Card logo with Master and VISA cards" class="h-6 w-auto mr-3" height="24" src="https://i.postimg.cc/HLmS9k7w/De-Watermark-ai-1749625337662-Photoroom-2.png" width="40"/>
+        <span class="text-xs text-gray-600">
+         Debit/Credit Card (Master and VISA Cards) (+10 PKR)
+        </span>
+        <input aria-label="Debit/Credit Card payment option" class="ml-auto accent-[#0B2A66]" name="payment" type="radio"/>
+       </label>
+       <label class="flex items-center border border-gray-300 rounded-md p-2 cursor-pointer hover:border-[#0B2A66]">
+        <img alt="Jazzcash Mobile Wallet logo with yellow background" class="h-6 w-auto mr-3" height="24" src="https://i.postimg.cc/vBLx7PMH/jazz-cash-png-2-Photoroom-1-3.png" width="40"/>
+        <span class="text-xs text-gray-600">
+         Jazzcash Mobile Wallet (+5 PKR)
+        </span>
+        <input aria-label="Jazzcash Mobile Wallet payment option" class="ml-auto accent-[#0B2A66]" name="payment" type="radio"/>
+       </label>
+       <label class="flex items-center border border-gray-300 rounded-md p-2 cursor-pointer hover:border-[#0B2A66]">
+        <img alt="Easypaisa Mobile Account logo with green background" class="h-6 w-auto mr-3" height="24" src="https://i.postimg.cc/3R6NFgGc/Easypaisa-Digital-Bank-logo-1.png" width="40"/>
+        <span class="text-xs text-gray-600">
+         Easypaisa Mobile Account (+5 PKR)
+        </span>
+        <input aria-label="Easypaisa Mobile Account payment option" class="ml-auto accent-[#0B2A66]" name="payment" type="radio"/>
+       </label>
+       <label class="flex items-center border border-gray-300 rounded-md p-2 cursor-pointer hover:border-[#0B2A66]">
+        <img alt="Stripe logo with black background" class="h-6 w-auto mr-3" height="24" src="https://i.postimg.cc/BvT0t2Z0/Stripe-Logo-revised-2016-svg.png" width="40"/>
+        <span class="text-xs text-gray-600">
+         International Debit/Credit Cards (8% Aprx. Fee)
+        </span>
+        <input aria-label="International Debit/Credit Cards payment option" class="ml-auto accent-[#0B2A66]" name="payment" type="radio"/>
+       </label>
+      </fieldset>
+      <button class="mt-4 w-full bg-[#0B2A66] text-white text-sm font-semibold py-2 rounded hover:bg-[#0a2555] transition-colors" type="submit">
+       Pay
+      </button>
+     </form>
+    </section>
+    <!-- Right box -->
+    <aside class="w-full max-w-sm border border-gray-300 rounded-md p-4 bg-white">
+     <div class="flex justify-between text-1xl font-semibold text-gray-700 mb-2">
+      <span>
+       Bus
+      </span>
+      <span>
+       FSD
+      </span>
+     </div>
+     <div class="flex justify-between text-xs text-gray-700 mb-4">
+      <span>
+       LHE-T
+      </span>
+      <span>
+      </span>
+     </div>
+     <div class="border-t border-gray-300 pt-2 mb-2">
+      <div class="flex justify-between text-sm font-bold text-gray-900 mb-1 select-none">
+       <span>
+        Actual Total
+       </span>
+       <span>
+        Rs 940
+       </span>
+      </div>
+      <div class="flex justify-between text-xs text-gray-700 select-none">
+       <span>
+        Service Fee
+       </span>
+       <span>
+        Rs 14
+       </span>
+      </div>
+     </div>
+     <div class="border-t border-gray-300 pt-2">
+      <div class="flex justify-between text-sm font-bold text-[#0B2A66] select-none">
+       <span>
+        Total
+       </span>
+       <span>
+        Rs 954
+       </span>
+      </div>
+     </div>
+    </aside>
+   </div>
+  </main>
+    <!--footer-->
+  <footer class="bg-[#0c1e4f] text-white text-sm sm:text-[16px] px-4 sm:px-6 md:px-10 py-10">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <div>
+        <h4 class="font-semibold mb-3">
+          Support
+        </h4>
+        <ul class="space-y-1">
+          <li>
+            <a class="hover:underline transition-all" href="booking.html">
+              Book Your Ticket
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="Ticket.html">
+             Ticket
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="#">
+              Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="Contact Us.html">
+              Contact us
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="#">
+              FAQs
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="About Us.html">
+              About us
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">
+          Visit Us
+        </h4>
+        <address class="not-italic text-sm sm:text-[15px] leading-snug space-y-1">
+          <p>
+            Head Office: Tate Sons Office
+            <br/>
+            P-68, Pakiman,
+            <br/>
+            Behind General Bus Stand,
+            <br/>
+            Faisalabad - Pakistan.
+          </p>
+          <p>
+            Sub Office: Tate Sons Office,
+            <br/>
+            Nadir Bus Terminal,
+            <br/>
+            Jinnah Colony,
+            <br/>
+            Faisalabad - Pakistan.
+          </p>
+        </address>
+      </div>
+      <div>
+        <h4 class="text-xl sm:text-[20px] font-semibold mb-3">
+          UAN +92 3087035263
+        </h4>
+        <p class="text-sm sm:text-[14px] mb-2">
+          info@Tatesonsgroup.com
+        </p>
+        <p class="text-sm sm:text-[14px] mb-4">
+          Install Our App for
+          <span class="font-semibold">
+            Easy Booking!
+          </span>
+        </p>
+        <a class="inline-block mb-6" href="#">
+          <img alt="Google Play Store badge to install app" class="h-8 sm:h-10" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"/>
+        </a>
+        <div class="flex space-x-4 text-white text-base sm:text-lg">
+          <a aria-label="Facebook" class="hover:text-gray-300 transition-all" href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a aria-label="Twitter" class="hover:text-gray-300 transition-all" href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a aria-label="TikTok" class="hover:text-gray-300 transition-all" href="#">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a aria-label="Instagram" class="hover:text-gray-300 transition-all" href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a aria-label="LinkedIn" class="hover:text-gray-300 transition-all" href="#">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="text-xs sm:text-sm text-gray-300 mt-8 text-center">
+      Copyright © 2025. Tate Sons. All rights reserved.
+    </p>
+  </footer>
+  
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    // Close mobile menu when clicking on a link
+    const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>

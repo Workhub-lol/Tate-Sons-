@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>Tate Sons Transport</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    .font-montserrat {
+      font-family: 'Montserrat', sans-serif;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+    .transition-all {
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-[#f7faff]">
+  <!--topnumberbar-->
+  <div class="bg-white border-b border-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-1">
+      <p class="text-xs text-[#1a2a5a] font-semibold text-center">
+        Book Your Tickets Now! Call UAN:
+        <span class="underline">
+          +92 3087035263
+        </span>
+        or Visit Our Website!
+      </p>
+    </div>
+  </div>
+  
+  <!--navbar section-->
+  <nav class="bg-[#14264e] ">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a class="flex items-center space-x-2 bg-white rounded px-2 py-1 transition-all hover:shadow-md" href="index.html">
+          <span class="text-[#14264e] font-bold text-lg select-none">
+            T&S
+          </span>
+          <span class="text-[#14264e] font-serif italic text-sm hidden sm:inline">
+            Tate Sons
+          </span>
+        </a>
+        <!--mobile menu-->
+        <button class="md:hidden text-white focus:outline-none" id="mobile-menu-button">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+        <!--pcnav-->
+        <ul class="hidden md:flex space-x-6 text-white text-sm font-semibold mx-auto">
+          <li>
+            <a class="hover:underline transition-all" href="index.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="#">
+              Our Services
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="booking.html">
+              Book your Ticket
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="About Us.html">
+              About us
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="Contact Us.html">
+              Contact us
+            </a>
+          </li>
+        </ul>
+        <div class="hidden md:block">
+          <span class="bg-white text-[#14264e] font-semibold px-4 py-2 text-sm rounded-sm select-none shadow-sm">
+            UAN: +92 3087035263
+          </span>
+        </div>
+      </div>
+    </div>
+    <!--mob nav bar-->
+    <div class="md:hidden hidden bg-[#0c1e4f] px-4 py-2" id="mobile-menu">
+      <ul class="flex flex-col space-y-3 text-white text-sm font-semibold pb-3">
+        <li>
+          <a class="block py-1" href="index.html">
+            Home
+          </a>
+        </li>
+        <li>
+          <a class="block py-1" href="#">
+            Our Services
+          </a>
+        </li>
+        <li>
+          <a class="block py-1" href="booking.html">
+            Book your Ticket
+          </a>
+        </li>
+        <li>
+          <a class="block py-1" href="About Us.html">
+            About us
+          </a>
+        </li>
+        <li>
+          <a class="block py-1" href="Contact Us.html">
+            Contact us
+          </a>
+        </li>
+        <li class="pt-2">
+          <span class="bg-white text-[#14264e] font-semibold px-3 py-1.5 text-sm rounded-sm inline-block">
+            UAN: +92 3087035263
+          </span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+ <!-- Contact info section -->
+  <section class="bg-[#f3f6fc] flex flex-col md:flex-row justify-center items-center gap-10 py-10 px-4 md:px-20">
+   <!-- Phone -->
+   <div class="flex items-center space-x-4">
+    <div class="bg-white shadow-lg rounded-full w-12 h-12 flex items-center justify-center">
+     <i class="fas fa-phone-alt text-[#0f2b5f] text-lg">
+     </i>
+    </div>
+    <div>
+     <p class="text-[15px] text-[#4b5563] mb-1">
+      Phone:
+     </p>
+     <p class="text-1xs font-semibold text-[#0f2b5f]">
+      041 111 737 737
+     </p>
+    </div>
+   </div>
+   <!-- Email -->
+   <div class="flex items-center space-x-4">
+    <div class="bg-[#0f2b5f] rounded-full w-12 h-12 flex items-center justify-center">
+     <i class="fas fa-envelope text-white text-lg">
+     </i>
+    </div>
+    <div>
+     <p class="text-[15px] text-[#4b5563] mb-1">
+      E-mail
+     </p>
+     <p class="text-1xs font-semibold text-[#0f2b5f]">
+      info@Tatesons.com
+     </p>
+    </div>
+   </div>
+   <!-- Address -->
+   <div class="flex items-center space-x-4">
+    <div class="bg-white shadow-lg rounded-full w-12 h-12 flex items-center justify-center">
+     <i class="fas fa-map-marker-alt text-[#0f2b5f] text-lg">
+     </i>
+    </div>
+    <div>
+     <p class="text-[15px] text-[#4b5563] mb-1">
+      Address:
+     </p>
+     <p class="text-1xs font-semibold text-[#0f2b5f] leading-snug">
+      Nadir Bus Terminal,
+      <br/>
+      Jinnah Colony,
+      <br/>
+      Faisalabad
+     </p>
+    </div>
+   </div>
+    </section>
+
+    <!-- CONTACT US Label Outside Form -->
+    <div class="w-full relative z-10 text-center mt-10">
+      <div
+        class="inline-block bg-yellow-400 text-xs font-semibold text-[#0B1E4F] px-3 py-1 rounded shadow-md select-none"
+        style="background-image: linear-gradient(to right, rgb(249, 212, 35), rgb(253, 235, 113)); border-left: 4px solid rgb(11, 30, 79);"
+      >
+        CONTACT US
+      </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <section class="relative max-w-screen-xl mx-auto px-4 mt-4">
+      <div
+        class="relative rounded-md p-8 sm:p-12 max-w-3xl mx-auto text-[#0B1E4F] bg-gradient-to-b from-[#E9F3F9] to-[#0B1E4F] bg-[url('https://placehold.co/600x400?text=Background+Image+for+Contact+Form')] bg-no-repeat bg-center bg-bottom bg-cover z-10"
+      >
+        <h2 class="text-3xl font-extrabold mb-8 text-center select-none">GET IN TOUCH</h2>
+        <form class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+          <input class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Full Name:" type="text" />
+          <input class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Email Address:" type="email" />
+          <input class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Phone:" type="tel" />
+          <select class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+            <option>Choose Service:</option>
+            <option>Service 1</option>
+            <option>Service 2</option>
+            <option>Service 3</option>
+          </select>
+          <textarea class="sm:col-span-2 p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400 resize-none" placeholder="Write Message..." rows="6"></textarea>
+        </form>
+        <div class="text-center">
+          <button class="bg-yellow-400 text-[#0B1E4F] font-semibold px-8 py-3 rounded shadow-md hover:bg-yellow-500 flex items-center mx-auto" type="submit">
+            Submit Now
+            <i class="fas fa-arrow-right ml-2"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+<!-- Map Image with Overlap and Reduced Height -->
+<div class="relative -mt-20 z-0 flex justify-center">
+  <img
+    alt="Map showing area around Nadir Bus Terminal, Jinnah Colony, Faisalabad"
+    class="map-image-footer rounded-t-none w-full max-w-7xl h-64 object-cover"
+    src="https://storage.googleapis.com/a1aa/image/4e5e619a-1082-4208-77f4-48270885abc4.jpg"
+  />
+</div>
+
+    <!-- footer -->
+ <footer class="bg-[#0c1e4f] text-white text-sm sm:text-[16px] px-4 sm:px-6 md:px-10 py-10">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <div>
+        <h4 class="font-semibold mb-3">
+          Support
+        </h4>
+        <ul class="space-y-1">
+          <li>
+            <a class="hover:underline transition-all" href="booking.html">
+              Book Your Ticket
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="Ticket.html">
+             Ticket
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="#">
+              Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="Contact Us.html">
+              Contact us
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="#">
+              FAQs
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="About Us.html">
+              About us
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">
+          Visit Us
+        </h4>
+        <address class="not-italic text-sm sm:text-[15px] leading-snug space-y-1">
+          <p>
+            Head Office: Tate Sons Office
+            <br/>
+            P-68, Pakiman,
+            <br/>
+            Behind General Bus Stand,
+            <br/>
+            Faisalabad - Pakistan.
+          </p>
+          <p>
+            Sub Office: Tate Sons Office,
+            <br/>
+            Nadir Bus Terminal,
+            <br/>
+            Jinnah Colony,
+            <br/>
+            Faisalabad - Pakistan.
+          </p>
+        </address>
+      </div>
+      <div>
+        <h4 class="text-xl sm:text-[20px] font-semibold mb-3">
+          UAN +92 3087035263
+        </h4>
+        <p class="text-sm sm:text-[14px] mb-2">
+          info@Tatesonsgroup.com
+        </p>
+        <p class="text-sm sm:text-[14px] mb-4">
+          Install Our App for
+          <span class="font-semibold">
+            Easy Booking!
+          </span>
+        </p>
+        <a class="inline-block mb-6" href="#">
+          <img alt="Google Play Store badge to install app" class="h-8 sm:h-10" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"/>
+        </a>
+        <div class="flex space-x-4 text-white text-base sm:text-lg">
+          <a aria-label="Facebook" class="hover:text-gray-300 transition-all" href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a aria-label="Twitter" class="hover:text-gray-300 transition-all" href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a aria-label="TikTok" class="hover:text-gray-300 transition-all" href="#">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a aria-label="Instagram" class="hover:text-gray-300 transition-all" href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a aria-label="LinkedIn" class="hover:text-gray-300 transition-all" href="#">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="text-xs sm:text-sm text-gray-300 mt-8 text-center">
+      Copyright © 2025. Tate Sons. All rights reserved.
+    </p>
+  </footer>
+  
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    // Close mobile menu when clicking on a link
+    const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+  </script>
+
+  </body>
+</html>

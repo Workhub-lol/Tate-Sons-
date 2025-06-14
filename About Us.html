@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Tate Sons Transport</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap"
+        rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+
+<body class="bg-[#f7faff]">
+    <!--topnumberbar-->
+    <div class="bg-white border-b border-gray-300">
+        <div class="max-w-7xl mx-auto px-4 py-1">
+            <p class="text-xs text-[#1a2a5a] font-semibold text-center">
+                Book Your Tickets Now! Call UAN:
+                <span class="underline">
+                    +92 3087035263
+                </span>
+                or Visit Our Website!
+            </p>
+        </div>
+    </div>
+
+    <!--navbar section-->
+    <nav class="bg-[#14264e] ">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a class="flex items-center space-x-2 bg-white rounded px-2 py-1 transition-all hover:shadow-md"
+                    href="index.html">
+                    <span class="text-[#14264e] font-bold text-lg select-none">
+                        T&S
+                    </span>
+                    <span class="text-[#14264e] font-serif italic text-sm hidden sm:inline">
+                        Tate Sons
+                    </span>
+                </a>
+                <!--mobile menu-->
+                <button class="md:hidden text-white focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <!--pcnav-->
+                <ul class="hidden md:flex space-x-6 text-white text-sm font-semibold mx-auto">
+                    <li>
+                        <a class="hover:underline transition-all" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="#">
+                            Our Services
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="booking.html">
+                            Book your Ticket
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="About Us.html">
+                            About us
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="Contact Us.html">
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+                <div class="hidden md:block">
+                    <span
+                        class="bg-white text-[#14264e] font-semibold px-4 py-2 text-sm rounded-sm select-none shadow-sm">
+                        UAN: +92 3087035263
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--mob nav bar-->
+        <div class="md:hidden hidden bg-[#0c1e4f] px-4 py-2" id="mobile-menu">
+            <ul class="flex flex-col space-y-3 text-white text-sm font-semibold pb-3">
+                <li>
+                    <a class="block py-1" href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a class="block py-1" href="#">
+                        Our Services
+                    </a>
+                </li>
+                <li>
+                    <a class="block py-1" href="booking.html">
+                        Book your Ticket
+                    </a>
+                </li>
+                <li>
+                    <a class="block py-1" href="About Us.html">
+                        About us
+                    </a>
+                </li>
+                <li>
+                    <a class="block py-1" href="Contact Us.html">
+                        Contact us
+                    </a>
+                </li>
+                <li class="pt-2">
+                    <span class="bg-white text-[#14264e] font-semibold px-3 py-1.5 text-sm rounded-sm inline-block">
+                        UAN: +92 3087035263
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="max-w-[1200px] mx-auto px-6 py-16 flex flex-col lg:flex-row lg:items-start lg:justify-between gap-10">
+        <!-- Left Images -->
+        <img alt="Person handing over cardboard box to another person outdoors"
+            class="hidden lg:block absolute top-1/2 left-0 mt-14 ml-20 -translate-y-1/2 w-[180px] h-[320px] object-cover"
+            src="https://storage.googleapis.com/a1aa/image/eeb629d8-77e0-4422-4d48-b096d1306f03.jpg" width="300"
+            height="300" />
+        <div class="flex flex-col gap-3 ml-0 lg:ml-[170px] max-w-[320px] mx-auto lg:mx-0">
+            <img alt="Two people standing in front of blue bus with trees in background"
+                class="object-cover w-full h-[250px]" height="250"
+                src="https://storage.googleapis.com/a1aa/image/6dd303f9-9056-4d4a-dbc1-96bee2b66285.jpg" width="320" />
+            <img alt="Steering wheel and dashboard inside a bus" class="object-cover w-full h-[300px]" height="300"
+                src="https://storage.googleapis.com/a1aa/image/61df1981-e43f-4eed-a155-fc5b593e2049.jpg" width="320" />
+        </div>
+        <!-- Right Content -->
+        <section class="flex-1 max-w-[600px]">
+            <h1 class="font-semibold text-[28px] leading-[36px] mb-8 max-w-[480px]">
+                Reliable Travel &amp; Cargo Solutions — Since Day One
+            </h1>
+            <div class="flex flex-col gap-8 mb-10 max-w-[480px]">
+                <div class="flex gap-4 items-start">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#E9EAFB] flex items-center justify-center">
+                        <i class="fas fa-microchip text-[#3B9BFF] text-lg">
+                        </i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-base mb-1">
+                            Our Vision
+                        </h3>
+                        <p class="text-sm text-[#4B4B4B] leading-relaxed">
+                            To be Pakistan’s most trusted name in intercity travel and cargo,
+                            delivering safe, affordable, and comfortable journeys with unmatched
+                            customer care.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-start">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#E9EAFB] flex items-center justify-center">
+                        <i class="fas fa-award text-[#3B9BFF] text-lg">
+                        </i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-base mb-1">
+                            Our Mission
+                        </h3>
+                        <p class="text-sm text-[#4B4B4B] leading-relaxed">
+                            We are committed to providing top-quality transportation and cargo
+                            services that combine convenience, innovation, and reliability —
+                            ensuring every passenger and parcel reaches its destination safely and
+                            on time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button aria-label="Our Services"
+                class="bg-[#143D8D] text-white text-sm font-semibold px-6 py-3 rounded flex items-center gap-2 hover:bg-[#0f2e6a] transition">
+                Our Services
+                <i class="fas fa-arrow-right">
+                </i>
+            </button>
+        </section>
+    </main>
+    <!-- Stats Section -->
+    <section class="bg-[#0c1e4f] py-10 min-h-[300px] relative z-10">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center text-white text-xs sm:text-sm">
+            <div class="border-r border-white/20 pr-4 sm:pr-6">
+                <p class="text-[#f2c94c] font-bold text-lg sm:text-xl">1.5 M</p>
+                <p>Happy Customer</p>
+            </div>
+            <div class="border-r border-white/20 pr-4 sm:pr-6 bg-gradient-to-r from-[#0a193a] to-[#0c1e4f] rounded-md">
+                <p class="text-[#f2c94c] font-bold text-lg sm:text-xl">60+</p>
+                <p>Years of Experience</p>
+            </div>
+            <div class="border-r border-white/20 pr-4 sm:pr-6">
+                <p class="text-[#f2c94c] font-bold text-lg sm:text-xl">10+</p>
+                <p>Terminals</p>
+            </div>
+            <div>
+                <p class="text-[#f2c94c] font-bold text-lg sm:text-xl">500+</p>
+                <p>Vehicles</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section (Overlap) -->
+    <div class="relative z-20 -mt-24 px-4 flex justify-center items-center">
+        <div class="max-w-4xl w-full">
+            <div class="relative w-full aspect-[5/2] max-w-full mx-auto shadow-xl rounded-lg overflow-hidden">
+                <img alt="Transparent checkered background with a black circular play button icon in the center"
+                    class="w-full h-full object-cover"
+                    src="https://storage.googleapis.com/a1aa/image/7c241a2b-dc9d-499b-dc01-e1611bc82707.jpg"
+                    loading="lazy" width="600" height="640" />
+                <button aria-label="Play video"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black rounded-full w-12 h-12 flex items-center justify-center">
+                    <i class="fas fa-play text-white text-lg ml-1"></i>
+                </button>
+            </div>
+            <p class="text-center text-xs text-gray-700 mt-4 leading-tight font-sans">
+                Tate Sons is a trusted name in intercity travel and cargo services,
+                proudly connecting 8–10 major cities including Lahore, Faisalabad, Gojra,
+                Samundri, Shorkot, Toba Tek Singh, Kamalia, Rajana, Hafizabad, and Gujranwala.
+                With a commitment to affordable fares, timely departures, and excellent
+                customer service, we ensure safe and comfortable journeys for all. Our
+                modern bus fleet and SMS-tracked cargo service set us apart in the industry.
+                Whether you’re traveling or sending goods — Tate Sons is your reliable
+                partner.
+        </div>
+    </div>
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <!-- Section 1 -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-16 items-center">
+            <div class="order-2 md:order-none">
+                <h2 class="text-[#0B1E40] font-bold text-3xl leading-9 tracking-wide mb-3">
+                    Reliable and Fast Cargo Services
+                </h2>
+                <p class="text-[#0B1E40] text-l leading-5 max-w-md">
+                    Send your parcels, gifts, and goods across Pakistan with confidence.
+                    Our SMS tracking ensures peace of mind from dispatch to delivery.
+                    Trusted by thousands for secure and timely cargo handling.
+                </p>
+            </div>
+            <div class="order-1 md:order-none">
+                <img loading="lazy"
+                    alt="Man in warehouse wearing a safety vest standing next to stacked cardboard boxes"
+                    class="rounded" height="250" width="400"
+                    src="https://storage.googleapis.com/a1aa/image/e7f9c2f2-4644-422d-d5c1-84dd60c28d37.jpg" />
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-16 items-center mt-16">
+            <div class="order-1 md:order-none">
+                <img loading="lazy" alt="Two blue intercity buses parked outdoors with trees in background"
+                    class="rounded" height="250" width="400"
+                    src="https://storage.googleapis.com/a1aa/image/472b7a87-fb41-4760-5758-eb3263852689.jpg" />
+            </div>
+            <div class="order-2 md:order-none">
+                <h2 class="text-[#0B1E40] font-bold text-3xl leading-9 tracking-wide mb-3">
+                    Premium Intercity Transport Services
+                </h2>
+                <p class="text-[#0B1E40] text-l leading-5 max-w-md">
+                    Travel in comfort with our luxury and economy class buses. We
+                    operate across major cities like Lahore, Faisalabad, and Multan.
+                    Enjoy the lowest fares with on-time departures and modern amenities.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-16 items-center mt-16">
+            <div class="order-2 md:order-none">
+                <h2 class="text-[#0B1E40] font-bold text-3xl leading-9 tracking-wide mb-3">
+                    Nationwide Logistics and Freight Solutions
+                </h2>
+                <p class="text-[#0B1E40] text-l leading-5 max-w-md">
+                    From light parcels to heavy machinery—we move it all. Equipped with
+                    a wide fleet of trucks, containers, and trollies. Our logistics
+                    network spans all major commercial routes in Pakistan.
+                </p>
+            </div>
+            <div class="order-1 md:order-none">
+                <img loading="lazy" alt="Forklift loading shipping containers onto a white truck at a busy port"
+                    class="rounded" height="250" width="400"
+                    src="https://storage.googleapis.com/a1aa/image/e01465b4-d1d5-407f-d873-dfffc71fcf62.jpg" />
+            </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-16 items-center mt-16">
+            <div class="order-1 md:order-none">
+                <img loading="lazy" alt="Close-up of petrol pumps with green and yellow fuel nozzles at a gas station"
+                    class="rounded" height="250" width="400"
+                    src="https://storage.googleapis.com/a1aa/image/5beb610f-e5d1-4211-7f6a-9169ce22730d.jpg" />
+            </div>
+            <div class="order-2 md:order-none">
+                <h2 class="text-[#0B1E40] font-bold text-3xl leading-9 tracking-wide mb-3">
+                    Quality Oil &amp; Gas Distribution Services
+                </h2>
+                <p class="text-[#0B1E40] text-l leading-5 max-w-md">
+                    Fuel your journey with our premium petroleum products. We operate
+                    petrol stations at key highway and urban locations. Committed to
+                    safety, quality, and uninterrupted supply.
+                </p>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#0c1e4f] text-white text-sm sm:text-[16px] px-4 sm:px-6 md:px-10 py-10">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <div>
+                <h4 class="font-semibold mb-3">
+                    Support
+                </h4>
+                <ul class="space-y-1">
+                    <li>
+                        <a class="hover:underline transition-all" href="booking.html">
+                            Book Your Ticket
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="Ticket.html">
+                            Ticket
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="#">
+                            Contact us
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="#">
+                            FAQs
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="#">
+                            About us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-3">
+                    Visit Us
+                </h4>
+                <address class="not-italic text-sm sm:text-[15px] leading-snug space-y-1">
+                    <p>
+                        Head Office: Tate Sons Office
+                        <br />
+                        P-68, Pakiman,
+                        <br />
+                        Behind General Bus Stand,
+                        <br />
+                        Faisalabad - Pakistan.
+                    </p>
+                    <p>
+                        Sub Office: Tate Sons Office,
+                        <br />
+                        Nadir Bus Terminal,
+                        <br />
+                        Jinnah Colony,
+                        <br />
+                        Faisalabad - Pakistan.
+                    </p>
+                </address>
+            </div>
+            <div>
+                <h4 class="text-xl sm:text-[20px] font-semibold mb-3">
+                    UAN +92 3087035263
+                </h4>
+                <p class="text-sm sm:text-[14px] mb-2">
+                    info@Tatesonsgroup.com
+                </p>
+                <p class="text-sm sm:text-[14px] mb-4">
+                    Install Our App for
+                    <span class="font-semibold">
+                        Easy Booking!
+                    </span>
+                </p>
+                <a class="inline-block mb-6" href="#">
+                    <img alt="Google Play Store badge to install app" class="h-8 sm:h-10"
+                        src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" />
+                </a>
+                <div class="flex space-x-4 text-white text-base sm:text-lg">
+                    <a aria-label="Facebook" class="hover:text-gray-300 transition-all" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a aria-label="Twitter" class="hover:text-gray-300 transition-all" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a aria-label="TikTok" class="hover:text-gray-300 transition-all" href="#">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a aria-label="Instagram" class="hover:text-gray-300 transition-all" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a aria-label="LinkedIn" class="hover:text-gray-300 transition-all" href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="text-xs sm:text-sm text-gray-300 mt-8 text-center">
+            Copyright © 2025. Tate Sons. All rights reserved.
+        </p>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+
+</html>

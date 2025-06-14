@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>Book Your Ticket - Tate Sons Transport</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    .font-montserrat {
+      font-family: 'Montserrat', sans-serif;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+    .transition-all {
+      transition: all 0.3s ease;
+    }
+    /* Custom scrollbar for seat selection container */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    .animate-pulse-slow {
+      animation: pulse 3s infinite;
+    }
+    .seat {
+      transition: all 0.2s ease;
+    }
+    .seat:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body class="bg-[#f7faff]">
+  <!-- Top bar -->
+  <div class="bg-white border-b border-gray-300">
+    <div class="max-w-7xl mx-auto px-4 py-1">
+      <p class="text-xs text-[#1a2a5a] font-semibold text-center">
+        Book Your Tickets Now! Call UAN:
+        <span class="underline">
+          +92 3087035263
+        </span>
+        or Visit Our Website!
+      </p>
+    </div>
+  </div>
+  
+  <!-- Navbar -->
+  <nav class="bg-[#14264e] sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a class="flex items-center space-x-2 bg-white rounded px-2 py-1 transition-all hover:shadow-md" href="index.html">
+          <span class="text-[#14264e] font-bold text-lg select-none">
+            T&S
+          </span>
+          <span class="text-[#14264e] font-serif italic text-sm hidden sm:inline">
+            Tate Sons
+          </span>
+        </a>
+        
+        <!-- Mobile menu button -->
+        <button class="md:hidden text-white focus:outline-none" id="mobile-menu-button">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+        
+        <!-- Desktop navigation -->
+        <ul class="hidden md:flex space-x-6 text-white text-sm font-semibold mx-auto">
+          <li>
+            <a class="hover:underline transition-all" href="index.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="#">
+              Our Services
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="booking.html">
+              Book your Ticket
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="About Us.html">
+              About us
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="Contact Us.html">
+              Contact us
+            </a>
+          </li>
+        </ul>
+        
+        <div class="hidden md:block">
+          <span class="bg-white text-[#14264e] font-semibold px-4 py-2 text-sm rounded-sm select-none shadow-sm">
+            UAN: +92 3087035263
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mobile navigation menu -->
+    <div class="md:hidden hidden bg-[#0c1e4f] px-4 py-2" id="mobile-menu">
+      <ul class="flex flex-col space-y-3 text-white text-sm font-semibold pb-3">
+        <li>
+          <a class="block py-1" href="index.html">
+            Home
+          </a>
+        </li>
+        <li>
+          <a class="block py-1" href="#">
+            Our Services
+          </a>
+        </li>
+        <li>
+          <a class="block py-1" href="booking.html">
+            Book your Ticket
+          </a>
+        </li>
+        <li>
+          <a class="block py-1" href="About Us.html">
+            About us
+          </a>
+        </li>
+        <li>
+          <a class="block py-1" href="Contact Us.html">
+            Contact us
+          </a>
+        </li>
+        <li class="pt-2">
+          <span class="bg-white text-[#14264e] font-semibold px-3 py-1.5 text-sm rounded-sm inline-block">
+            UAN: +92 3087035263
+          </span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Booking Content -->
+  <div class="max-w-7xl mx-auto p-4 sm:p-6 md:p-8 space-y-6 animate-fade-in">
+    <div class="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
+      <!-- Left main container -->
+      <div class="flex-1 space-y-4">
+        <!-- Executive Class info -->
+        <div class="bg-white rounded-lg shadow-md p-4">
+          <h2 class="font-semibold text-[#1e293b] text-[20px] leading-tight">
+            Executive Class
+          </h2>
+          <div class="text-[#475569] text-[15px] font-semibold mt-1">
+            FSD - LHR <span class="font-normal">01:00PM</span>
+          </div>
+          <div class="text-[#64748b] text-[13px] mt-1 leading-tight">
+            Refreshment | Movies & Entertainment | Max 30KG Per Seat
+          </div>
+        </div>
+        
+        <!-- Seat selection section -->
+        <div class="flex flex-col lg:flex-row gap-4">
+          <!-- Seat map container -->
+          <div class="bg-white border border-gray-200 rounded-lg p-4 w-full lg:w-auto">
+            <h2 class="text-gray-900 font-semibold text-sm mb-3">
+              Seat selection
+              <span class="text-gray-400 font-normal">(Outbound)</span>
+            </h2>
+            
+            <!-- Bus layout diagram -->
+            <div class="flex justify-center relative overflow-x-auto sm:overflow-x-visible">
+              <div class="flex flex-col space-y-1.5 items-center">
+                <!-- Front of bus indicator -->
+                <div class="bg-gray-100 text-gray-500 text-[10px] w-full text-center rounded-t-md mb-2 py-1">
+                  FRONT OF BUS (DRIVER)
+                </div>
+                
+                <!-- Seat rows -->
+                <div class="flex w-full justify-center">
+                  <!-- Left seats column -->
+                  <div class="flex flex-col space-y-1.5 mr-4">
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">4</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">8</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">12</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">16</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">20</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">24</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">28</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">32</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">36</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">40</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">45</button>
+                  </div>
+                  
+                  <!-- Left inner seats column -->
+                  <div class="flex flex-col space-y-1.5 mr-6">
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">7</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">11</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">15</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">19</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">23</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">27</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">31</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">35</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">39</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">44</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">43</button>
+                  </div>
+                  
+                  <!-- Aisle -->
+                  <div class="mx-1 w-4 flex flex-col items-center">
+                    <div class="text-[10px] text-gray-400 mb-1">AISLE</div>
+                    <div class="h-full border-r border-dashed border-gray-300"></div>
+                  </div>
+                  
+                  <!-- Right inner seats column -->
+                  <div class="flex flex-col space-y-1.5 ml-1">
+                    <button class="seat w-9 h-9 rounded-md border border-[#002B52] text-[#002B52] text-xs font-semibold flex items-center justify-center transition-all hover:bg-[#e6f0ff]" type="button">2</button>
+                    <button class="seat w-9 h-9 rounded-md border border-[#002B52] text-[#002B52] text-xs font-semibold flex items-center justify-center transition-all hover:bg-[#e6f0ff]" type="button">6</button>
+                    <button class="seat w-9 h-9 rounded-md border border-[#002B52] text-[#002B52] text-xs font-semibold flex items-center justify-center transition-all hover:bg-[#e6f0ff]" type="button">10</button>
+                    <button class="seat w-9 h-9 rounded-md border border-[#002B52] text-[#002B52] text-xs font-semibold flex items-center justify-center transition-all hover:bg-[#e6f0ff]" type="button">14</button>
+                    <button class="seat w-9 h-9 rounded-md border border-[#002B52] text-[#002B52] text-xs font-semibold flex items-center justify-center transition-all hover:bg-[#e6f0ff]" type="button">18</button>
+                    <button class="seat w-9 h-9 rounded-md border border-[#002B52] text-[#002B52] text-xs font-semibold flex items-center justify-center transition-all hover:bg-[#e6f0ff]" type="button">22</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">26</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">30</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">34</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">38</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">42</button>
+                  </div>
+                  
+                  <!-- Right seats column -->
+                  <div class="flex flex-col space-y-1.5 ml-4">
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">1</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">5</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">9</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">13</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#002B52] text-white text-xs font-semibold flex items-center justify-center" type="button">17</button>
+                    <button class="seat w-9 h-9 rounded-md bg-[#F72585] text-white text-xs font-semibold flex items-center justify-center animate-pulse-slow" type="button">21</button>
+                    <button class="seat w-9 h-9 rounded-md border border-[#002B52] text-[#002B52] text-xs font-semibold flex items-center justify-center transition-all hover:bg-[#e6f0ff]" type="button">25</button>
+                    <button class="seat w-9 h-9 rounded-md border border-[#002B52] text-[#002B52] text-xs font-semibold flex items-center justify-center transition-all hover:bg-[#e6f0ff]" type="button">29</button>
+                    <button class="seat w-9 h-9 rounded-md border border-[#002B52] text-[#002B52] text-xs font-semibold flex items-center justify-center transition-all hover:bg-[#e6f0ff]" type="button">33</button>
+                    <button class="seat w-9 h-9 rounded-md border border-[#002B52] text-[#002B52] text-xs font-semibold flex items-center justify-center transition-all hover:bg-[#e6f0ff]" type="button">37</button>
+                    <button class="seat w-9 h-9 rounded-md border border-[#002B52] text-[#002B52] text-xs font-semibold flex items-center justify-center transition-all hover:bg-[#e6f0ff]" type="button">41</button>
+                  </div>
+                </div>
+                
+                <!-- Back of bus indicator -->
+                <div class="bg-gray-100 text-gray-500 text-[10px] w-full text-center rounded-b-md mt-2 py-1">
+                  BACK OF BUS
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Seat Status and Booking Details -->
+          <div class="flex flex-col sm:flex-row lg:flex-col gap-4 w-full lg:w-[320px]">
+            <div class="border border-[#e2e8f0] rounded-md p-3 flex-1">
+              <div class="text-[16px] font-semibold text-[#475569] mb-3">
+                Seat Status
+              </div>
+              <div class="grid grid-cols-2 gap-2 text-[12px] text-[#475569]">
+                <div class="flex items-center space-x-2">
+                  <div class="w-3 h-3 bg-pink-500 rounded-sm border border-pink-600"></div>
+                  <span>Booked by Female</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <div class="w-3 h-3 bg-blue-900 rounded-sm border border-blue-900"></div>
+                  <span>Booked by Male</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <div class="w-3 h-3 border border-[#94a3b8] rounded-sm"></div>
+                  <span>Seat Available</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                  <div class="w-3 h-3 bg-yellow-400 rounded-sm border border-yellow-400"></div>
+                  <span>Seat Selected</span>
+                </div>
+              </div>
+            </div>
+            <div class="border border-[#e2e8f0] rounded-md p-3 text-[12px] text-[#475569] flex-1">
+              <div class="font-semibold text-[15px] mb-1">Booking Details</div>
+              <div>
+                Your selected seats will appear here. You can select a maximum
+                of 5 seats per booking.
+              </div>
+              <div id="selected-seats" class="mt-3 min-h-[50px]">
+                <div class="flex flex-wrap gap-2" id="selected-seats-list"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Passenger and Contact Details -->
+        <form class="bg-white rounded-lg shadow-md p-4 space-y-6">
+          <!-- Passenger Details -->
+          <fieldset class="border border-[#e2e8f0] rounded-md p-4 space-y-4">
+            <legend class="text-[16px] font-semibold text-[#475569] px-2">
+              Passenger Details
+            </legend>
+            <div class="flex flex-wrap gap-4 items-center text-[14px] text-[#475569]">
+              <label class="flex items-center space-x-1">
+                <input type="radio" name="title" value="mr" checked class="w-3 h-3 text-blue-600"/>
+                <span>Mr.</span>
+              </label>
+              <label class="flex items-center space-x-1">
+                <input type="radio" name="title" value="mrs" class="w-3 h-3 text-blue-600"/>
+                <span>Mrs.</span>
+              </label>
+              <label class="flex items-center space-x-1">
+                <input type="radio" name="title" value="miss" class="w-3 h-3 text-blue-600"/>
+                <span>Miss.</span>
+              </label>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
+              <div class="flex-1">
+                <label for="fullName" class="block text-[14px] font-semibold text-[#475569] mb-1">
+                  Full Name
+                </label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" class="w-full border border-[#cbd5e1] rounded px-2 py-1 text-[12px] text-[#475569] focus:outline-none focus:ring-1 focus:ring-blue-600"/>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center space-x-2 mb-1 text-[14px] font-semibold text-[#475569]">
+                  <label for="cnicPassport" class="flex-1">CNIC</label>
+                  <label class="flex items-center space-x-1">
+                    <input type="radio" name="idType" value="cnic" checked class="w-3 h-3 text-blue-600"/>
+                    <span>CNIC</span>
+                  </label>
+                  <label class="flex items-center space-x-1">
+                    <input type="radio" name="idType" value="passport" class="w-3 h-3 text-blue-600"/>
+                    <span>Passport</span>
+                  </label>
+                </div>
+                <input type="text" id="cnicPassport" name="cnicPassport" placeholder="Enter CNIC e.g. 12345-1234567-1" class="w-full border border-[#cbd5e1] rounded px-2 py-1 text-[12px] text-[#475569] focus:outline-none focus:ring-1 focus:ring-blue-600"/>
+              </div>
+            </div>
+            
+            <div>
+              <label class="inline-flex items-center text-[13px] text-[#475569]">
+                <input type="checkbox" class="w-3 h-3 text-blue-600" name="saveDetails"/>
+                <span class="ml-1">Save Details for future use</span>
+              </label>
+            </div>
+            
+            <div>
+              <label for="nickName" class="block text-[14px] font-semibold text-[#475569] mb-1">
+                Nick Name
+              </label>
+              <input type="text" id="nickName" name="nickName" placeholder="Optional" class="w-full border border-[#cbd5e1] rounded px-2 py-1 text-[12px] text-[#475569] focus:outline-none focus:ring-1 focus:ring-blue-600"/>
+            </div>
+          </fieldset>
+          
+          <!-- Contact Details -->
+          <fieldset class="border border-[#e2e8f0] rounded-md p-4 space-y-4">
+            <legend class="text-[16px] font-semibold text-[#475569] px-2">
+              Contact Details
+            </legend>
+            <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
+              <div class="flex-1">
+                <label for="phoneNumber" class="block text-[14px] font-semibold text-[#475569] mb-1">
+                  Phone Number
+                </label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="e.g. 03XX-XXXXXXX" class="w-full border border-[#cbd5e1] rounded px-2 py-1 text-[12px] text-[#475569] focus:outline-none focus:ring-1 focus:ring-blue-600"/>
+              </div>
+              <div class="flex-1">
+                <label for="emailAddress" class="block text-[14px] font-semibold text-[#475569] mb-1">
+                  Email Address
+                </label>
+                <input type="email" id="emailAddress" name="emailAddress" placeholder="e.g. example@email.com" class="w-full border border-[#cbd5e1] rounded px-2 py-1 text-[12px] text-[#475569] focus:outline-none focus:ring-1 focus:ring-blue-600"/>
+              </div>
+            </div>
+          </fieldset>
+          
+          <button type="submit" class="w-full bg-[#0c4a6e] text-white text-[13px] font-semibold rounded py-2 hover:bg-[#083755] transition-all">
+            Next
+          </button>
+        </form>
+      </div>
+      
+      <!-- Right sidebar -->
+      <div class="w-full md:w-64 space-y-4">
+        <div class="bg-white rounded-lg shadow-md p-4 text-[14px] text-[#475569] sticky top-20">
+          <div class="flex justify-between items-center mb-2">
+            <div class="font-semibold text-[#1e293b] text-[18px]">Bus</div>
+            <div class="text-right text-[14px]">Oneway</div>
+          </div>
+          <div class="mb-1">
+            <span class="font-semibold text-[#1e293b]">FSD - LHE</span>
+          </div>
+          <div class="border-t border-[#e2e8f0] pt-2">
+            <div class="flex justify-between font-semibold text-[13px] mb-1">
+              <span>Subtotal</span>
+              <span id="subtotal">Rs 0</span>
+            </div>
+            <div class="flex justify-between font-semibold text-[13px] mb-1">
+              <span>Outbound</span>
+              <span id="outbound">Rs 0</span>
+            </div>
+            <div class="flex justify-between font-semibold text-[15px] text-[#0c4a6e]">
+              <span>Total</span>
+              <span id="total">Rs 0</span>
+            </div>
+          </div>
+          <button type="button" id="apply-coupon" class="mt-4 w-full border border-[#0c4a6e] text-[#0c4a6e] text-[13px] font-semibold rounded py-1.5 hover:bg-[#e6f0ff] transition-all flex items-center justify-center">
+            <i class="fas fa-tags mr-2"></i>
+            Apply Coupon
+          </button>
+          <div id="coupon-field" class="mt-3 hidden">
+            <div class="flex space-x-2">
+              <input type="text" placeholder="Enter coupon code" class="flex-1 border border-[#cbd5e1] rounded-l px-2 py-1 text-[12px] text-[#475569] focus:outline-none focus:ring-1 focus:ring-blue-600"/>
+              <button type="button" class="bg-[#0c4a6e] text-white text-xs font-semibold rounded-r px-2 hover:bg-[#083755] transition-all">
+                Apply
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="bg-[#0c1e4f] text-white text-sm sm:text-[16px] px-4 sm:px-6 md:px-10 py-10">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <div>
+        <h4 class="font-semibold mb-3">
+          Support
+        </h4>
+        <ul class="space-y-1">
+          <li>
+            <a class="hover:underline transition-all" href="booking.html">
+              Book Your Ticket
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="Ticket.html">
+             Ticket
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="#">
+              Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="Contact Us.html">
+              Contact us
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="#">
+              FAQs
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline transition-all" href="About Us.html">
+              About us
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">
+          Visit Us
+        </h4>
+        <address class="not-italic text-sm sm:text-[15px] leading-snug space-y-1">
+          <p>
+            Head Office: Tate Sons Office
+            <br/>
+            P-68, Pakiman,
+            <br/>
+            Behind General Bus Stand,
+            <br/>
+            Faisalabad - Pakistan.
+          </p>
+          <p>
+            Sub Office: Tate Sons Office,
+            <br/>
+            Nadir Bus Terminal,
+            <br/>
+            Jinnah Colony,
+            <br/>
+            Faisalabad - Pakistan.
+          </p>
+        </address>
+      </div>
+      <div>
+        <h4 class="text-xl sm:text-[20px] font-semibold mb-3">
+          UAN +92 3087035263
+        </h4>
+        <p class="text-sm sm:text-[14px] mb-2">
+          info@Tatesonsgroup.com
+        </p>
+        <p class="text-sm sm:text-[14px] mb-4">
+          Install Our App for
+          <span class="font-semibold">
+            Easy Booking!
+          </span>
+        </p>
+        <a class="inline-block mb-6" href="#">
+          <img alt="Google Play Store badge to install app" class="h-8 sm:h-10" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"/>
+        </a>
+        <div class="flex space-x-4 text-white text-base sm:text-lg">
+          <a aria-label="Facebook" class="hover:text-gray-300 transition-all" href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a aria-label="Twitter" class="hover:text-gray-300 transition-all" href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a aria-label="TikTok" class="hover:text-gray-300 transition-all" href="#">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a aria-label="Instagram" class="hover:text-gray-300 transition-all" href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a aria-label="LinkedIn" class="hover:text-gray-300 transition-all" href="#">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="text-xs sm:text-sm text-gray-300 mt-8 text-center">
+      Copyright © 2025. Tate Sons. All rights reserved.
+    </p>
+  </footer>
+  
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    // Close mobile menu when clicking on a link
+    const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+    
+    // Seat selection functionality
+    const availableSeats = document.querySelectorAll('.seat');
+    const selectedSeatsList = document.getElementById('selected-seats-list');
+    const subtotalEl = document.getElementById('subtotal');
+    const outboundEl = document.getElementById('outbound');
+    const totalEl = document.getElementById('total');
+    let selectedSeats = [];
+    const PRICE_PER_SEAT = 1200;
+    
+    availableSeats.forEach(seat => {
+      // Only make available seats selectable
+      if (seat.classList.contains('border-[#002B52]')) {
+        seat.addEventListener('click', function() {
+          const seatNumber = this.textContent.trim();
+          
+          if (this.classList.contains('bg-yellow-400')) {
+            // Deselect seat
+            this.classList.remove('bg-yellow-400');
+            this.classList.add('border-[#002B52]');
+            this.classList.add('text-[#002B52]');
+            this.classList.remove('text-white');
+            
+            // Remove from selected seats
+            selectedSeats = selectedSeats.filter(num => num !== seatNumber);
+          } else {
+            // Check if maximum seats reached
+            if (selectedSeats.length >= 5) {
+              alert('You can select a maximum of 5 seats per booking.');
+              return;
+            }
+            
+            // Select seat
+            this.classList.add('bg-yellow-400');
+            this.classList.remove('border-[#002B52]');
+            this.classList.remove('text-[#002B52]');
+            this.classList.add('text-white');
+            
+            // Add to selected seats
+            selectedSeats.push(seatNumber);
+          }
+          
+          // Update selected seats display
+          updateSelectedSeats();
+          
+          // Update price calculation
+          updatePriceCalculation();
+        });
+      }
+    });
+    
+    function updateSelectedSeats() {
+      selectedSeatsList.innerHTML = '';
+      
+      if (selectedSeats.length === 0) {
+        selectedSeatsList.innerHTML = '<p class="text-gray-400">No seats selected</p>';
+        return;
+      }
+      
+      selectedSeats.forEach(seatNum => {
+        const seatTag = document.createElement('div');
+        seatTag.className = 'bg-[#e6f0ff] text-[#0c4a6e] rounded px-2 py-1 text-xs font-semibold flex items-center';
+        seatTag.innerHTML = `Seat ${seatNum} <button type="button" class="ml-1 text-gray-400 hover:text-gray-600" data-seat="${seatNum}">×</button>`;
+        selectedSeatsList.appendChild(seatTag);
+        
+        // Add remove button functionality
+        seatTag.querySelector('button').addEventListener('click', function() {
+          const seatToRemove = this.getAttribute('data-seat');
+          
+          // Update the seat button appearance
+          availableSeats.forEach(seatBtn => {
+            if (seatBtn.textContent.trim() === seatToRemove) {
+              seatBtn.classList.remove('bg-yellow-400');
+              seatBtn.classList.add('border-[#002B52]');
+              seatBtn.classList.add('text-[#002B52]');
+              seatBtn.classList.remove('text-white');
+            }
+          });
+          
+          // Remove from selected seats
+          selectedSeats = selectedSeats.filter(num => num !== seatToRemove);
+          
+          // Update display
+          updateSelectedSeats();
+          updatePriceCalculation();
+        });
+      });
+    }
+    
+    function updatePriceCalculation() {
+      const subtotal = selectedSeats.length * PRICE_PER_SEAT;
+      subtotalEl.textContent = `Rs ${subtotal}`;
+      outboundEl.textContent = `Rs ${subtotal}`;
+      totalEl.textContent = `Rs ${subtotal}`;
+    }
+    
+    // Initialize empty state
+    updateSelectedSeats();
+    
+    // Coupon code toggle
+    document.getElementById('apply-coupon').addEventListener('click', function() {
+      const couponField = document.getElementById('coupon-field');
+      couponField.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>
+        Tate Sons Tickets
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-700">
+    <!-- Top info bar -->
+    <div class="bg-white border-b border-gray-300">
+        <div class="max-w-7xl mx-auto px-4 py-1">
+            <p class="text-xs text-[#1a2a5a] font-semibold text-center">
+                Book Your Tickets Now! Call UAN:
+                <span class="underline">
+                    +92 3087035263
+                </span>
+                or Visit Our Website!
+            </p>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="bg-[#14264e] ">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a class="flex items-center space-x-2 bg-white rounded px-2 py-1 transition-all hover:shadow-md"
+                    href="index.html">
+                    <span class="text-[#14264e] font-bold text-lg select-none">
+                        T&S
+                    </span>
+                    <span class="text-[#14264e] font-serif italic text-sm hidden sm:inline">
+                        Tate Sons
+                    </span>
+                </a>
+                <!--mobile menu-->
+                <button class="md:hidden text-white focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <!--pcnav-->
+                <ul class="hidden md:flex space-x-6 text-white text-sm font-semibold mx-auto">
+                    <li>
+                        <a class="hover:underline transition-all" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="#">
+                            Our Services
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="booking.html">
+                            Book your Ticket
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="About Us.html">
+                            About us
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="Contact Us.html">
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+                <div class="hidden md:block">
+                    <span
+                        class="bg-white text-[#14264e] font-semibold px-4 py-2 text-sm rounded-sm select-none shadow-sm">
+                        UAN: +92 3087035263
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--mob nav bar-->
+        <div class="md:hidden hidden bg-[#0c1e4f] px-4 py-2" id="mobile-menu">
+            <ul class="flex flex-col space-y-3 text-white text-sm font-semibold pb-3">
+                <li>
+                    <a class="block py-1" href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a class="block py-1" href="#">
+                        Our Services
+                    </a>
+                </li>
+                <li>
+                    <a class="block py-1" href="booking.html">
+                        Book your Ticket
+                    </a>
+                </li>
+                <li>
+                    <a class="block py-1" href="About Us.html">
+                        About us
+                    </a>
+                </li>
+                <li>
+                    <a class="block py-1" href="Contact Us.html">
+                        Contact us
+                    </a>
+                </li>
+                <li class="pt-2">
+                    <span class="bg-white text-[#14264e] font-semibold px-3 py-1.5 text-sm rounded-sm inline-block">
+                        UAN: +92 3087035263
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Search bar section -->
+    <section class="bg-blue-950 my-12">
+        <form aria-label="Bus ticket booking form"
+            class="max-w-7xl mx-auto px-4 py-10 mb-10 flex justify-center animate-fade-in"
+            style="animation-delay: 0.4s;">
+            <div
+                class="bg-white rounded-xl shadow-lg p-4 md:p-6 flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 w-full max-w-5xl">
+                <div class="flex flex-col w-full md:w-1/5">
+                    <label for="to" class="text-xs font-semibold text-gray-400 mb-1">TO</label>
+                    <select id="to" name="to" required
+                        class="border border-gray-300 rounded-md py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="" disabled selected>Select destination</option>
+                        <option>Lahore</option>
+                        <option>Karachi</option>
+                        <option>Islamabad</option>
+                        <option>Faisalabad</option>
+                    </select>
+                </div>
+                <div class="flex flex-col w-full md:w-1/5">
+                    <label for="from" class="text-xs font-semibold text-gray-400 mb-1">FROM</label>
+                    <select id="from" name="from" required
+                        class="border border-gray-300 rounded-md py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option value="" disabled selected>Select departure</option>
+                        <option>Faisalabad</option>
+                        <option>Lahore</option>
+                        <option>Karachi</option>
+                        <option>Islamabad</option>
+                    </select>
+                </div>
+                <div class="flex flex-col w-full md:w-1/5">
+                    <label for="date" class="text-xs font-semibold text-gray-400 mb-1">DATE</label>
+                    <div class="relative">
+                        <input type="date" id="date" name="date" required
+                            class="border border-gray-300 rounded-md py-2 px-3 text-sm w-full focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                        <span class="absolute right-3 top-2.5 text-gray-400">
+                            <i class="far fa-calendar-alt"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="flex flex-col w-full md:w-1/5">
+                    <label for="passengers" class="text-xs font-semibold text-gray-400 mb-1">PASSENGERS</label>
+                    <select id="passengers" name="passengers"
+                        class="border border-gray-300 rounded-md py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <button type="submit"
+                    class="bg-[#3b7aff] text-white rounded-full px-6 py-2 flex items-center justify-center w-14 h-10 self-end hover:bg-[#2a5edb] transition-colors"
+                    aria-label="Search buses">
+                    <i class="fas fa-search text-sm"></i>
+                    <span class="sr-only">Search Buses</span>
+                </button>
+            </div>
+        </form>
+    </section>
+
+
+
+    <!-- Ticket listings -->
+    <!-- Ticket listings -->
+    <main class="max-w-5xl mx-auto px-4 sm:px-8 py-6 space-y-4">
+        <!-- Five repeated ticket cards -->
+        <article aria-label="Ticket option"
+            class="bg-white rounded-lg shadow-sm p-4 sm:p-6 border border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between"
+            role="region">
+            <div class="flex items-start space-x-3 sm:space-x-4 flex-1">
+                <i class="fas fa-bus text-gray-700 mt-1">
+                </i>
+                <div class="flex flex-col space-y-1">
+                    <span class="text-[#0B2F6A] font-bold text-xs sm:text-sm uppercase">
+                        EXECUTIVE CLASS
+                    </span>
+                    <span class="font-semibold text-gray-900 text-sm sm:text-base">
+                        FSD-LHR
+                        <span class="font-normal text-gray-500 ml-2 text-xs sm:text-sm">
+                            01:00 PM
+                        </span>
+                    </span>
+                    <span class="text-xs sm:text-sm text-gray-500">
+                        Refreshment | Movies &amp; Entertainment | Max 30 KG per Seat
+                    </span>
+                </div>
+            </div>
+            <div class="flex flex-col items-end space-y-1 mt-4 sm:mt-0 sm:ml-6 w-20 sm:w-auto">
+                <span class="line-through text-xs text-gray-400">
+                    920
+                </span>
+                <span class="text-green-800 font-bold text-sm sm:text-base">
+                    736
+                </span>
+            </div>
+        </article>
+        <article aria-label="Ticket option"
+            class="bg-white rounded-lg shadow-sm p-4 sm:p-6 border border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between"
+            role="region">
+            <div class="flex items-start space-x-3 sm:space-x-4 flex-1">
+                <i class="fas fa-bus text-gray-700 mt-1">
+                </i>
+                <div class="flex flex-col space-y-1">
+                    <span class="text-[#0B2F6A] font-bold text-xs sm:text-sm uppercase">
+                        EXECUTIVE CLASS
+                    </span>
+                    <span class="font-semibold text-gray-900 text-sm sm:text-base">
+                        FSD-LHR
+                        <span class="font-normal text-gray-500 ml-2 text-xs sm:text-sm">
+                            02:00 PM
+                        </span>
+                    </span>
+                    <span class="text-xs sm:text-sm text-gray-500">
+                        Refreshment | Movies &amp; Entertainment | Max 30 KG per Seat
+                    </span>
+                </div>
+            </div>
+            <div class="flex flex-col items-end space-y-1 mt-4 sm:mt-0 sm:ml-6 w-20 sm:w-auto">
+                <span class="line-through text-xs text-gray-400">
+                    920
+                </span>
+                <span class="text-green-800 font-bold text-sm sm:text-base">
+                    736
+                </span>
+            </div>
+        </article>
+        <article aria-label="Ticket option"
+            class="bg-white rounded-lg shadow-sm p-4 sm:p-6 border border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between"
+            role="region">
+            <div class="flex items-start space-x-3 sm:space-x-4 flex-1">
+                <i class="fas fa-bus text-gray-700 mt-1">
+                </i>
+                <div class="flex flex-col space-y-1">
+                    <span class="text-[#0B2F6A] font-bold text-xs sm:text-sm uppercase">
+                        EXECUTIVE CLASS
+                    </span>
+                    <span class="font-semibold text-gray-900 text-sm sm:text-base">
+                        FSD-LHR
+                        <span class="font-normal text-gray-500 ml-2 text-xs sm:text-sm">
+                            03:00 PM
+                        </span>
+                    </span>
+                    <span class="text-xs sm:text-sm text-gray-500">
+                        Refreshment | Movies &amp; Entertainment | Max 30 KG per Seat
+                    </span>
+                </div>
+            </div>
+            <div class="flex flex-col items-end space-y-1 mt-4 sm:mt-0 sm:ml-6 w-20 sm:w-auto">
+                <span class="line-through text-xs text-gray-400">
+                    920
+                </span>
+                <span class="text-green-800 font-bold text-sm sm:text-base">
+                    736
+                </span>
+            </div>
+        </article>
+        <article aria-label="Ticket option"
+            class="bg-white rounded-lg shadow-sm p-4 sm:p-6 border border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between"
+            role="region">
+            <div class="flex items-start space-x-3 sm:space-x-4 flex-1">
+                <i class="fas fa-bus text-gray-700 mt-1">
+                </i>
+                <div class="flex flex-col space-y-1">
+                    <span class="text-[#0B2F6A] font-bold text-xs sm:text-sm uppercase">
+                        EXECUTIVE CLASS
+                    </span>
+                    <span class="font-semibold text-gray-900 text-sm sm:text-base">
+                        FSD-LHR
+                        <span class="font-normal text-gray-500 ml-2 text-xs sm:text-sm">
+                            01:00 PM
+                        </span>
+                    </span>
+                    <span class="text-xs sm:text-sm text-gray-500">
+                        Refreshment | Movies &amp; Entertainment | Max 30 KG per Seat
+                    </span>
+                </div>
+            </div>
+            <div class="flex flex-col items-end space-y-1 mt-4 sm:mt-0 sm:ml-6 w-20 sm:w-auto">
+                <span class="line-through text-xs text-gray-400">
+                    920
+                </span>
+                <span class="text-green-800 font-bold text-sm sm:text-base">
+                    736
+                </span>
+            </div>
+        </article>
+        <article aria-label="Ticket option"
+            class="bg-white rounded-lg shadow-sm p-4 sm:p-6 border border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between"
+            role="region">
+            <div class="flex items-start space-x-3 sm:space-x-4 flex-1">
+                <i class="fas fa-bus text-gray-700 mt-1">
+                </i>
+                <div class="flex flex-col space-y-1">
+                    <span class="text-[#0B2F6A] font-bold text-xs sm:text-sm uppercase">
+                        EXECUTIVE CLASS
+                    </span>
+                    <span class="font-semibold text-gray-900 text-sm sm:text-base">
+                        FSD-LHR
+                        <span class="font-normal text-gray-500 ml-2 text-xs sm:text-sm">
+                            02:00 PM
+                        </span>
+                    </span>
+                    <span class="text-xs sm:text-sm text-gray-500">
+                        Refreshment | Movies &amp; Entertainment | Max 30 KG per Seat
+                    </span>
+                </div>
+            </div>
+            <div class="flex flex-col items-end space-y-1 mt-4 sm:mt-0 sm:ml-6 w-20 sm:w-auto">
+                <span class="line-through text-xs text-gray-400">
+                    920
+                </span>
+                <span class="text-green-800 font-bold text-sm sm:text-base">
+                    736
+                </span>
+            </div>
+        </article>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#0c1e4f] text-white text-sm sm:text-[16px] px-4 sm:px-6 md:px-10 py-10">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <div>
+                <h4 class="font-semibold mb-3">
+                    Support
+                </h4>
+                <ul class="space-y-1">
+                    <li>
+                        <a class="hover:underline transition-all" href="booking.html">
+                            Book Your Ticket
+                        </a>
+                    </li>
+                    <li>
+                     <a class="hover:underline transition-all" href="Ticket.html">
+                      Ticket
+                     </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="Contact Us.html">
+                            Contact us
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="#">
+                            FAQs
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="About Us.html">
+                            About us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-3">
+                    Visit Us
+                </h4>
+                <address class="not-italic text-sm sm:text-[15px] leading-snug space-y-1">
+                    <p>
+                        Head Office: Tate Sons Office
+                        <br />
+                        P-68, Pakiman,
+                        <br />
+                        Behind General Bus Stand,
+                        <br />
+                        Faisalabad - Pakistan.
+                    </p>
+                    <p>
+                        Sub Office: Tate Sons Office,
+                        <br />
+                        Nadir Bus Terminal,
+                        <br />
+                        Jinnah Colony,
+                        <br />
+                        Faisalabad - Pakistan.
+                    </p>
+                </address>
+            </div>
+            <div>
+                <h4 class="text-xl sm:text-[20px] font-semibold mb-3">
+                    UAN +92 3087035263
+                </h4>
+                <p class="text-sm sm:text-[14px] mb-2">
+                    info@Tatesonsgroup.com
+                </p>
+                <p class="text-sm sm:text-[14px] mb-4">
+                    Install Our App for
+                    <span class="font-semibold">
+                        Easy Booking!
+                    </span>
+                </p>
+                <a class="inline-block mb-6" href="#">
+                    <img alt="Google Play Store badge to install app" class="h-8 sm:h-10"
+                        src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" />
+                </a>
+                <div class="flex space-x-4 text-white text-base sm:text-lg">
+                    <a aria-label="Facebook" class="hover:text-gray-300 transition-all" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a aria-label="Twitter" class="hover:text-gray-300 transition-all" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a aria-label="TikTok" class="hover:text-gray-300 transition-all" href="#">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a aria-label="Instagram" class="hover:text-gray-300 transition-all" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a aria-label="LinkedIn" class="hover:text-gray-300 transition-all" href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="text-xs sm:text-sm text-gray-300 mt-8 text-center">
+            Copyright © 2025. Tate Sons. All rights reserved.
+        </p>
+    </footer>
+
+    </main>
+</body>
+
+</html>
